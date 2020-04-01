@@ -9,7 +9,7 @@ const timer = document.getElementById('timer')
 
 var mediaRecorder
 
-// array init
+// array init of chunk data
 
 var blobArray = [];
 
