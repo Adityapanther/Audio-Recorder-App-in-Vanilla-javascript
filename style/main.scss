@@ -8,12 +8,14 @@
 .wrapper{
     width: 100%;
     max-width: 1366px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     padding-top: 2em;
     flex-wrap: wrap;
     background-color: #f4f4f4;
+    
 
     .title{
         width: 100%;
@@ -29,10 +31,12 @@
 
     .container{
         width: 25%;
-        height: 88%;
+        min-height: 88%;
+        height: auto;
         margin-top: 5px;
         background-color: #ffffff;
         border-radius: 5px;
+        margin-bottom: 3em;
 
         .status{
             width: 100%;

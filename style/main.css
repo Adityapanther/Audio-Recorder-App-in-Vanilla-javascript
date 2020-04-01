@@ -8,7 +8,8 @@
 .wrapper {
   width: 100%;
   max-width: 1366px;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,10 +37,12 @@
 
 .wrapper .container {
   width: 25%;
-  height: 88%;
+  min-height: 88%;
+  height: auto;
   margin-top: 5px;
   background-color: #ffffff;
   border-radius: 5px;
+  margin-bottom: 3em;
 }
 
 .wrapper .container .status {

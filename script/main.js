@@ -1,5 +1,5 @@
 const mediaStatus = document.getElementById('status');
-const audioData = document.getElementById('audio');
+const audioElement = document.getElementById('audio');
 const playPauseBtn = document.getElementById('playPauseBtn');
 const recordBtn = document.getElementById('recordbtn');
 const downloadBtn = document.getElementById('downloadBtn');
@@ -22,25 +22,8 @@ downloadBtn.addEventListener('click', downloadAudio);
 
 // initial function call
 accessMedia();
-initAudio()
 
 
-
-// initialize audio elements
-
-function initAudio(){
-    
-    audioData.pause();
-    audioData.controls = true;
-    if (audioData.src = "") {
-        audioData.pause();
-        playPauseBtn.style.backgroundImage = `url(../img/playpause-btn.png)`;
-    }else {
-        audioData.pause();
-        playPauseBtn.style.backgroundImage = `url('../img/playpause-btn.png')`;
-    }
-
-}
 // check has media or not
 function hasAudioDevice(){
     if(navigator.mediaDevices){
@@ -54,7 +37,7 @@ function addAudioStream(){
     const blob = blobStreamData();
     if(blobArray){
         const audioURL = window.URL.createObjectURL(blob);
-        audioData.src = audioURL;
+        audioElement.src = audioURL;
 
     }
 }
@@ -101,9 +84,9 @@ function stopRecording(){
     mediaRecorder.stop();
     mediaStatus.innerHTML = mediaRecorder.state;
     recordBtn.style.backgroundImage = `url('../img/record.png')`;
-    addAudioStream();
-
+    
 }
+
 
 
 // adding recording to array
@@ -120,13 +103,26 @@ var addDataToArray = function(event){
 // audio play pause control
 function audioController(){
     
-    if(!audioData.paused){
-        audioData.pause();
-        playPauseBtn.style.backgroundImage = `url(../img/playpause-btn.png)`;
+    if(!audioElement.paused){
+        audioElement.pause();
+        
     }else {
-      audioData.play();
-      playPauseBtn.style.backgroundImage = `url('../img/pause.png')`;
+        addAudioStream();
+      audioElement.play();
     }
+}
+
+audioElement.onplaying = function (e){
+    if (e) {
+        playPauseBtn.style.backgroundImage = `url('../img/pause.png')`;
+    }
+}
+
+audioElement.onpause = function (e){
+    if (event) {
+        playPauseBtn.style.backgroundImage = `url(../img/playpause-btn.png)`;
+    }
+    
 }
 
 // returning blob data
