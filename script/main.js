@@ -112,12 +112,14 @@ function audioController(){
     }
 }
 
+// audio callback on playing function
 audioElement.onplaying = function (e){
     if (e) {
         playPauseBtn.style.backgroundImage = `url('../img/pause.png')`;
     }
 }
 
+// audio callback on pause function
 audioElement.onpause = function (e){
     if (event) {
         playPauseBtn.style.backgroundImage = `url(../img/playpause-btn.png)`;
