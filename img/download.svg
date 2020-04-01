@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created by Aditya kumar</desc>
+  <g id="icons8_download_from_the_cloud">
+    <path d="M0 0L65 0L65 65L0 65L0 0Z" id="Background" fill="none" stroke="none" />
+    <path d="M13.5417 0C6.06281 0 0 6.06281 0 13.5417C1.29143e-06 21.0205 6.06281 27.0833 13.5417 27.0833C21.0205 27.0833 27.0833 21.0205 27.0833 13.5417C27.0833 6.06281 21.0205 0 13.5417 0L13.5417 0Z" transform="translate(2.708679 23.02118)" id="Shape" fill="#B3E5FC" stroke="none" />
+    <path d="M16.25 0C7.27537 0 0 7.27538 0 16.25C1.29143e-06 25.2246 7.27537 32.5 16.25 32.5C25.2246 32.5 32.5 25.2246 32.5 16.25C32.5 7.27537 25.2246 0 16.25 0L16.25 0Z" transform="translate(16.25 12.1875)" id="Shape" fill="#B3E5FC" stroke="none" />
+    <path d="M11.5104 0C5.15339 0 0 5.15339 0 11.5104C0 17.8674 5.15339 23.0208 11.5104 23.0208C17.8674 23.0208 23.0208 17.8674 23.0208 11.5104C23.0208 5.15339 17.8674 0 11.5104 0L11.5104 0Z" transform="translate(39.27118 27.08368)" id="Shape" fill="#B3E5FC" stroke="none" />
+    <path d="M0 0L33.8542 0L33.8542 13.5417L0 13.5417L0 0Z" transform="translate(16.25 36.5625)" id="Shape" fill="#B3E5FC" stroke="none" />
+    <path d="M0 0L5.41667 0L5.41667 13.5417L0 13.5417L0 0Z" transform="translate(29.79132 24.375)" id="Shape" fill="#3F51B5" stroke="none" />
+    <path d="M8.125 9.47915L16.25 0L0 0L8.125 9.47915Z" transform="translate(24.375 35.20868)" id="Shape" fill="#3F51B5" stroke="none" />
+  </g>
+</svg>
