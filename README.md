@@ -13,6 +13,6 @@ URL :- https://adityapanther.github.io/Audio-Recorder-App-in-Vanilla-javascript/
 
 # How to use
 
-1) clone Project from url https://github.com/raj68518/Audio-Recorder-App-in-Vanilla-javascript.git
+1) clone Project from url https://github.com/adityapanther/Audio-Recorder-App-in-Vanilla-javascript.git
 2) Open in your code Editor 
 3) run with Local server in your browser
