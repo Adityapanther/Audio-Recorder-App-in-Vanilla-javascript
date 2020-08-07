@@ -4,7 +4,7 @@
 
 # Demo
 
-URL :- https://raj68518.github.io/Audio-Recorder-App-in-Vanilla-javascript/
+URL :- https://adityapanther.github.io/Audio-Recorder-App-in-Vanilla-javascript/
 
 
 # info
