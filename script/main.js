@@ -77,13 +77,13 @@ function recordController(){
 function startRecording(){
     mediaRecorder.start();
     mediaStatus.innerHTML = mediaRecorder.state;
-    recordBtn.style.backgroundImage = `url('../img/stop.png')`;
+    recordBtn.style.backgroundImage = `url('${window.location.href}img/stop.png')`;
 }
 
 function stopRecording(){
     mediaRecorder.stop();
     mediaStatus.innerHTML = mediaRecorder.state;
-    recordBtn.style.backgroundImage = `url('../img/record.png')`;
+    recordBtn.style.backgroundImage = `url('${window.location.href}img/record.png')`;
     
 }
 
@@ -115,14 +115,14 @@ function audioController(){
 // audio callback on playing function
 audioElement.onplaying = function (e){
     if (e) {
-        playPauseBtn.style.backgroundImage = `url('${window.location.href}/img/pause.png')`;
+        playPauseBtn.style.backgroundImage = `url('${window.location.href}img/pause.png')`;
     }
 }
 
 // audio callback on pause function
 audioElement.onpause = function (e){
     if (event) {
-        playPauseBtn.style.backgroundImage = `url(${window.location.href}/img/playpause-btn.png)`;
+        playPauseBtn.style.backgroundImage = `url(${window.location.href}img/playpause-btn.png)`;
     }
     
 }
