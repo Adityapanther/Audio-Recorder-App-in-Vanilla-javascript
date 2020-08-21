@@ -108,21 +108,21 @@ function audioController(){
         
     }else {
         addAudioStream();
-      audioElement.play();
+      audioElement.play(10);
     }
 }
 
 // audio callback on playing function
 audioElement.onplaying = function (e){
     if (e) {
-        playPauseBtn.style.backgroundImage = `url('../img/pause.png')`;
+        playPauseBtn.style.backgroundImage = `url('${window.location.href}/img/pause.png')`;
     }
 }
 
 // audio callback on pause function
 audioElement.onpause = function (e){
     if (event) {
-        playPauseBtn.style.backgroundImage = `url(../img/playpause-btn.png)`;
+        playPauseBtn.style.backgroundImage = `url(${window.location.href}/img/playpause-btn.png)`;
     }
     
 }
